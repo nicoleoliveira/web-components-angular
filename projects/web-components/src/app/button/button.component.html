@@ -1,0 +1,8 @@
+<button
+  (click)="!disabled && click.emit()"
+  class="primary"
+  [ngClass]="{ 'disabled':disabled }"
+  [attr.aria-disabled]="disabled"
+  [attr.class]="type">
+  {{ label }}
+</button>
